@@ -9,4 +9,4 @@ if [ "$memory" -gt "$maxlimit" ]; then
    echo "Service Restarted Successfully!"
 else
     echo "Service Running Properly"
-fi    
+fi
