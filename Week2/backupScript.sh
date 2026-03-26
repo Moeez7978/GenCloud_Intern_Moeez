@@ -8,9 +8,11 @@ RETENTION_DAYS=7
 DATE=$(date +"%Y-%m-%d_%H-%M-%S")
 ARCHIVE="backup_$DATE.tar.gz"
 
+#Log Directory
 mkdir -p "$HOME/backups/logs"
+#Backup Directory
 mkdir -p "$BACKUP_DIR"
-
+#Log Function
 log(){
  echo "[$(date)] $1" | tee -a "$LOG_FILE"
 }
