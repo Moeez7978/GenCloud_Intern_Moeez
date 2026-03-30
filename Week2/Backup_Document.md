@@ -1,6 +1,6 @@
 # Automated Backup Script
 
-This script creates a compressed backup of a specified directory, stores it in a backup folder, logs all actions, and removes old backups after a certain number of days.
+This script creates a backup of a specified directory, stores it in a backup folder, logs, and removes old backups after a certain number of days.
 
 ## Script Overview
 
