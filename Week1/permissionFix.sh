@@ -11,12 +11,13 @@ if [ -d "$DIR" ]; then
 current_perm=$(stat -c "%a" "$DIR")
 
  if [ "$current_perm" -eq 777 ]; then
- 
+
 #Send mail to recipient that someone changed the directory permissions restoring them
 
     chmod "$permissions" "$DIR"
     echo "Permissions Fixed"
- else 
+    echo "Someone changed permissions of $DIR... Fixing Them" | mail -s "Fixing the Chnaged Permissions" "$recipient"
+ else
     echo "Permissions are ok!!"
  fi
 
