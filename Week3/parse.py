@@ -51,12 +51,12 @@ def main():
     errors = validate_config(config)
 
     if errors:
-        print("❌ Configuration Errors:")
+        print("Configuration Errors:")
         for err in errors:
             print(f"- {err}")
         sys.exit(1)
     else:
-        print("✅ Configuration is valid!")
+        print("Configuration is valid!")
 
 
 if __name__ == "__main__":
