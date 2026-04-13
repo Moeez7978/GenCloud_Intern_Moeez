@@ -26,11 +26,12 @@ try:
 
             # Check emails statuses
             if "status=sent" in line:
+                sent_count += 1;
             
             elif "status=bounced" in line:
-                
+                bounced_count += 1;
             elif "status=deferred" in line:
-                
+                deferred_count +=1 ;
 
             # Extract IP addresses
             ip_match = re.search(ip_pattern, line)
